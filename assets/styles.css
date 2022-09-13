@@ -2,6 +2,7 @@
   font-family: sans-serif;
   background-color: black;
   color: blanchedalmond;
+  font-size: 24px;
 }
 body {
   z-index: 1;
@@ -48,4 +49,23 @@ a {
   color: black;
   width: 100px;
   height: 50px;
+}
+.gradient {
+  background: linear-gradient(-45deg, rgb(124, 235, 250), rgb(183, 106, 255));
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: move 5s ease-in-out infinite;
+}
+@keyframes move {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
